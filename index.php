@@ -15,6 +15,13 @@ function __autoload($class){
 
 //$app = new Autoload();
 
+
+/**
+ * Load an CSV file nad parse it
+ * @param $filename
+ * @param $delimetre
+ * @return array
+ */
 function parseCSV($filename, $delimetre)
 {
     $csvfile = fopen($filename, 'r');
