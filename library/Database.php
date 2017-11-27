@@ -12,6 +12,12 @@ class Database extends PDO
     }
 
 
+    /**
+     * Execute an sql query and return the result
+     * @param string $sql
+     * @param array $param
+     * @param int $fetch
+     */
     public function select($sql="", $param=array(), $fetch=PDO::FETCH_ASSOC){
 
         $q = $this->prepare($sql);

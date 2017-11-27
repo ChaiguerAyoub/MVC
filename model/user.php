@@ -9,7 +9,7 @@ class user extends Model
 	}
 
     /**
-     * Get All users records from database
+     * Get All users record from database
      * @return stdClass
      */
     public function getAllUser(){

@@ -18,8 +18,6 @@ class Home extends Controller
 		$post = $this->post->getPost(20);
 
 		$this->view->render('index',compact('users','post'));
-
-
 	}
 
 

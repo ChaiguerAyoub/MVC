@@ -4,6 +4,7 @@
 class post extends Model{
 
     /**
+     * Fetch a post by its ID and return it
      * @param $id
      * @return stdClass
      */
@@ -17,7 +18,6 @@ class post extends Model{
 
         return $post;
     }
-
 
 
 }
