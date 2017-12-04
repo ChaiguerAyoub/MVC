@@ -10,13 +10,10 @@ class Autoload
         $url = $_GET['url'];
         $url = rtrim($url, "/");
         $url = explode("/", $url);
-//        var_dump($url);
 
-        // when  Controller is added it gives this error require(library/Home.php): failed to open stream: No such file or directory in C:\xampp\htdocs\MVC\index.php on line 13
 
         $fichier = "controller/" . ucfirst($url[0]) . ".php"; 
         if (file_exists($fichier)){
-
             require $fichier;
             $controller = new $url[0];
 
