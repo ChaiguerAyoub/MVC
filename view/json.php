@@ -1,6 +1,3 @@
-<?php
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -12,14 +9,17 @@
     <title>Json </title>
 </head>
 <body>
+<?php
+
+echo $result;
+?>
+
 
 <script type="text/javascript">
 
     function tableCreate() {
-        var body = document.body,
+        /*var body = document.body,
             tbl = document.createElement('table'),
-            data = <?php echo json_encode($data);  ?>;
-
         tbl.style.border = '1px solid black';
 
         for (var i = 0; i < data.length; i++) {
@@ -32,7 +32,7 @@
         }
 
         if (typeof tbl !== "undefined")
-            body.appendChild(tbl);
+            body.appendChild(tbl);*/
     }
 
     tableCreate();

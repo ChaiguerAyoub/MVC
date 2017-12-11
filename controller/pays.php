@@ -1,6 +1,6 @@
 <?php
 
-class Pays extends Controller
+class pays extends Controller
 {
 
 
@@ -33,7 +33,8 @@ class Pays extends Controller
             ));
 
 
-        $this->view->render('pays', compact("countries"));
+        echo json_encode($countries);
+        //$this->view->render('pays', compact("countries"));
     }
 
 

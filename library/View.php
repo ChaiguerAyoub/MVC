@@ -2,6 +2,8 @@
 
 class View
 {
+    var $errors = [];
+
 
     /** render the provided view, extract the passed arguments and make them available in the view
      * @param String $view
